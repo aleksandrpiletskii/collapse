@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.collapse {
+    display: grid;
+    transition: all ease 1s;
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+
+.collapse.hide {
+    grid-template-rows: 0fr;
+    padding: 0;
+}
+
+.collapse>div {
+    overflow: hidden;
+}
